@@ -1,0 +1,475 @@
+/* ============================================
+   DEVOPS SECTION - CENTERED REDESIGN
+   ============================================ */
+
+/* Centered Header Section */
+.devops-header-center {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.devops-title-centered {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #6366f1, #a855f7, #00d9ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.partner-lockup-centered {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 30px;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.partner-lockup-centered:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.4);
+    transform: translateY(-2px);
+}
+
+.partner-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.flurit-logo-inline {
+    height: 20px;
+    width: auto;
+}
+
+.flurit-text-logo {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a78bfa;
+}
+
+.devops-lead-centered {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Row - Features Left + Terminal Right */
+.devops-content-row {
+    margin-bottom: 60px;
+}
+
+/* Vertical Feature Cards on Left */
+.devops-features-vertical {
+    padding-right: 20px;
+}
+
+.devops-feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: visible;
+    min-height: 140px;
+}
+
+.devops-feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #6366f1, #a855f7, #00d9ff);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.devops-feature-card:hover::before {
+    opacity: 1;
+}
+
+.devops-feature-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateX(8px);
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+}
+
+.devops-feature-card .icon-box {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    font-size: 28px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.devops-feature-card:hover .icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.devops-feature-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-right: 100px;
+}
+
+.devops-feature-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
+}
+
+/* Metric Badge Positioning */
+.devops-feature-card .metric-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    font-size: 12px;
+    padding: 6px 14px;
+    white-space: nowrap;
+}
+
+/* Terminal Wrapper on Right */
+.devops-terminal-wrapper {
+    padding-left: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.devops-terminal-wrapper .terminal-card {
+    height: 100%;
+    min-height: 460px;
+}
+
+.terminal-body {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Terminal font size increase */
+.terminal-body .code-line {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    will-change: opacity;
+}
+
+/* Adjust card margins to fill height */
+.devops-features-vertical .devops-feature-card.mb-4 {
+    margin-bottom: 20px !important;
+}
+
+/* Centered Action Buttons */
+.devops-actions-centered {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   SERVICES SECTION - AI FEATURED CARDS
+   ============================================ */
+
+/* Featured AI Service Cards */
+.service-card-featured {
+    position: relative;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+    background: rgba(99, 102, 241, 0.05) !important;
+}
+
+.service-card-featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.service-card-featured:hover::before {
+    opacity: 1;
+}
+
+.service-card-featured .service-icon-wrapper,
+.service-card-featured h3,
+.service-card-featured p,
+.service-card-featured .service-features,
+.service-card-featured .service-link {
+    position: relative;
+    z-index: 1;
+}
+
+/* AI Powered Badge */
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    animation: pulse-badge 2s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    }
+}
+
+/* AI Gradient Backgrounds */
+.gradient-ai-1 {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
+}
+
+.gradient-ai-2 {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+.gradient-ai-3 {
+    background: linear-gradient(135deg, #00d9ff 0%, #6366f1 100%);
+    box-shadow: 0 8px 32px rgba(0, 217, 255, 0.3);
+}
+
+.gradient-ai-4 {
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    box-shadow: 0 8px 32px rgba(16, 185, 129, 0.3);
+}
+
+/* Featured card hover effect */
+.service-card-featured:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(99, 102, 241, 0.5) !important;
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.25) !important;
+}
+
+/* ============================================
+   FOOTER ENHANCEMENTS
+   ============================================ */
+
+.main-footer .footer-about p {
+    color: rgba(255, 255, 255, 0.6) !important;
+    line-height: 1.8;
+}
+
+.main-footer h4 {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.main-footer .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: color 0.3s ease;
+}
+
+.main-footer .text-muted:hover,
+.main-footer .hover-white:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.main-footer .social-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.main-footer .social-btn:hover {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.5);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.main-footer .footer-copyright-text p {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.main-footer .footer-policy-links a {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.main-footer .footer-policy-links a:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ============================================
+   CONTACT FORM ENHANCEMENTS
+   ============================================ */
+
+.contact-section .form-control:focus {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(99, 102, 241, 0.5) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+    outline: none;
+}
+
+.contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-section .btn-modern {
+    background: linear-gradient(135deg, #6366f1, #a855f7) !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-section .btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .devops-title-centered {
+        font-size: 36px;
+    }
+
+    .devops-lead-centered {
+        font-size: 16px;
+    }
+
+    .devops-features-vertical {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .devops-terminal-wrapper {
+        padding-left: 0;
+        position: relative;
+        top: 0;
+    }
+
+    .devops-terminal-wrapper .terminal-card {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .devops-title-centered {
+        font-size: 32px;
+    }
+
+    .devops-lead-centered {
+        font-size: 15px;
+    }
+
+    .devops-feature-card {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .devops-feature-card .icon-box {
+        margin: 0 auto;
+    }
+
+    .devops-feature-card h4 {
+        padding-right: 0;
+        margin-top: 40px;
+    }
+
+    .devops-feature-card .metric-badge {
+        top: 12px;
+        right: 12px;
+        left: auto;
+        transform: none;
+    }
+
+    .devops-feature-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .devops-actions-centered {
+        flex-direction: column;
+    }
+
+    .devops-actions-centered .btn-modern,
+    .devops-actions-centered .btn-secondary-devops {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Featured badge mobile positioning */
+    .featured-badge {
+        top: 12px;
+        right: 12px;
+        font-size: 9px;
+        padding: 5px 10px;
+    }
+
+    .service-card-featured:hover {
+        transform: translateY(-4px) scale(1.01);
+    }
+}
